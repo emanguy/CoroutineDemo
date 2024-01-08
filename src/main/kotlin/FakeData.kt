@@ -16,6 +16,7 @@ suspend fun doVolatilePopulationRequest(): Int {
     }
 
     if (randomChance == 3) {
+        println("Boom!!!")
         throw IOException("Failed to send request!")
     } else {
         return Random.nextInt(1000)
